@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {Image} from './image.interface';
 
 @Component({
   selector: 'app-movie-promo',
@@ -8,7 +9,9 @@ import { Router } from '@angular/router';
 })
 export class MoviePromoComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    
+   }
 
   onClick(){
     this.router.navigateByUrl('/details');
