@@ -1,29 +1,3 @@
-<!--
-<div id = "container">
-    <div ng2-carouselamos class = "slides-wrapper"
-      [items] = "items"
-      [width] = "900"
-      [$prev] = "prev"
-      [$next] = "next"
-      [$item] = "item">
-    </div>
-
-    <ng-template #prev>
-      <img src = "assets/images/left-arrow.png" id = "left">
-    </ng-template>
-  
-    <ng-template #next>
-      <img src = "assets/images/right-arrow.png" id = "right">
-    </ng-template>
-  
-    <ng-template #item let-item let-i="index">
-      <div class = "items">
-        <img src = "{{item.name}}">
-      </div>
-    </ng-template>
-</div>
--->
-
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -35,15 +9,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="assets/images/Hellboy.png" alt="Los Angeles">
+        <img src="assets/images/Hellboy.png" (click) = "onClick('hellboy')">
       </div>
   
       <div class="item">
-        <img src="assets/images/Avengers.png" alt="Chicago">
+        <img src="assets/images/Avengers.png" (click) = "onClick('avengers')">
       </div>
   
       <div class="item">
-        <img src="assets/images/Thor.jpeg" alt="New York">
+        <img src="assets/images/Thor.jpeg" (click) = "onClick('thor')">
       </div>
     </div>
   

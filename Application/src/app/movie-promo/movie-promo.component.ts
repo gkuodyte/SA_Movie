@@ -22,8 +22,9 @@ export class MoviePromoComponent implements OnInit {
     ];
    }
 
-  onClick(){
-    this.router.navigateByUrl('/details');
+  onClick(name: String){
+    console.log(name);
+    this.router.navigateByUrl('/details/' + name);
   }
 
   ngOnInit() {
