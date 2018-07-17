@@ -23,7 +23,6 @@ export class MoviePromoComponent implements OnInit {
    }
 
   onClick(name: String){
-    console.log(name);
     this.router.navigateByUrl('/details/' + name);
   }
 
