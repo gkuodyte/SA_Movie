@@ -1,26 +1,46 @@
-.topnav {
-    background-color: rgb(199, 12, 12);
+.navbar {
+    /*background-color: rgb(199, 12, 12);*/
+    background-color: black;
     overflow: hidden;
+    height: 70px;
 }
 nav{
     position: sticky;
-    top:0;
-    margin: 0;
+    width: 100%;
 }
 
-
-/* Style the links inside the navigation bar */
-.topnav a {
+body{
+    background-color: black;
+}
+.navHeader a{
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
+    
+
+    
+}
+
+.navHeader{
+    border-right: 1px solid black;
+}
+
+/* Style the links inside the navigation bar */
+.navLinks a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.navLinks a:hover {
     background-color: #ddd;
     color: black;
 }
