@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { MovieService } from "./movies.service";
+import { HttpClient } from "@angular/common/http";
+
+
 
 @Component({
   selector: 'app-root',
@@ -8,4 +11,13 @@ import { Http, Response } from '@angular/http';
 })
 export class AppComponent {
   title = 'app';
+  storedResponse: any;
+
+  constructor( private movies: MovieService){
+
+  }
+
+  onGetMovieData(){
+    this.storedResponse = this.movies.getData();
+  }
 }
