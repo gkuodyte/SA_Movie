@@ -13,7 +13,7 @@ const appRoutes: Routes =
 [
   {path: '', component: LandingComponent},
   {path: 'test', component: MoviePromoComponent},
-  {path: 'details', component: DetailsComponent},
+  {path: 'details/:name', component: DetailsComponent},
 ];
 
 @NgModule({
