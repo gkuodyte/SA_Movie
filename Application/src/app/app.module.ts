@@ -7,13 +7,9 @@ import { DetailsComponent } from './details/details.component';
 import { LandingComponent } from './landing/landing.component';
 import { MoviePromoComponent } from './movie-promo/movie-promo.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-<<<<<<< HEAD
-=======
-import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { MovieService} from './movies.service';
 import { HttpClientModule } from '@angular/common/http';
 
->>>>>>> 429db2df5d8befce5a746fa7044180e7915ddc4a
 
 const appRoutes: Routes =
 [
@@ -33,13 +29,8 @@ const appRoutes: Routes =
   imports: [
     BrowserModule,
     FormsModule,
-<<<<<<< HEAD
-    RouterModule.forRoot(appRoutes)
-=======
     HttpClientModule,
-    RouterModule.forRoot(appRoutes),
-    Ng2CarouselamosModule
->>>>>>> 429db2df5d8befce5a746fa7044180e7915ddc4a
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [
     MovieService,

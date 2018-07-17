@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 * {
     box-sizing: border-box;
@@ -27,39 +26,9 @@
     content: "";
     display: table;
     clear: both;
-=======
-.navbar {
-    /*background-color: rgb(199, 12, 12);*/
-    background-color: black;
-    overflow: hidden;
-    height: 70px;
-}
-nav{
-    position: sticky;
-    width: 100%;
->>>>>>> 429db2df5d8befce5a746fa7044180e7915ddc4a
 }
 
-body{
-    background-color: black;
-}
-.navHeader a{
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 20px;
-    
 
-    
-}
-
-.navHeader{
-    border-right: 1px solid black;
-}
-
-<<<<<<< HEAD
 .header {
     overflow: hidden;
     background-color: #222629;
@@ -71,14 +40,9 @@ body{
   
   /* Style the header links */
   .header a {
-=======
-/* Style the links inside the navigation bar */
-.navLinks a {
->>>>>>> 429db2df5d8befce5a746fa7044180e7915ddc4a
     float: left;
     color: #86C232;
     text-align: center;
-<<<<<<< HEAD
     padding: 12px;
     text-decoration: none;
     font-size: 18px; 
@@ -98,16 +62,6 @@ body{
   
   /* Change the background color on mouse-over */
   .header a:hover {
-=======
-    padding: 20px;
-    text-decoration: none;
-    font-size: 20px;
-    
-}
-
-/* Change the color of links on hover */
-.navLinks a:hover {
->>>>>>> 429db2df5d8befce5a746fa7044180e7915ddc4a
     background-color: #ddd;
     
   }
