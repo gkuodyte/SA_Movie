@@ -9,8 +9,17 @@ import { Router } from '@angular/router';
 })
 export class MoviePromoComponent implements OnInit {
 
+  items: Array<any> = [];
+
   constructor(private router: Router) {
-    
+    this.items = [
+      {name: 'assets/images/Thor.jpeg'},
+      {name: 'assets/images/harrypotter.jpg'},
+      {name: 'assets/images/Avengers.png'},
+      {name: 'assets/images/Thor.jpeg'},
+      {name: 'assets/images/Hellboy.png'},
+
+    ];
    }
 
   onClick(){

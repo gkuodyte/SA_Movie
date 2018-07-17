@@ -7,7 +7,7 @@ import { DetailsComponent } from './details/details.component';
 import { LandingComponent } from './landing/landing.component';
 import { MoviePromoComponent } from './movie-promo/movie-promo.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 const appRoutes: Routes =
 [
@@ -28,6 +28,7 @@ const appRoutes: Routes =
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
+    Ng2CarouselamosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
