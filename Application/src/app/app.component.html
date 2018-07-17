@@ -1,8 +1,22 @@
-<nav class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-</nav>
 
+
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <div class="container">
+        <div class="navHeader">
+        <a class="navbar-brand">Angular Router</a>
+        </div>
+        <div class="navLinks">
+        <ul class="nav navbar-nav" routerLinkActive="active">
+        
+            <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="about">About</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="contact">Contact Us</a></li>
+            
+        </ul>
+        </div>
+    </div>
+</nav>
+<body></body>
 <router-outlet></router-outlet>
+
+
