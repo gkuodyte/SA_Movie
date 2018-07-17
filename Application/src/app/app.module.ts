@@ -8,6 +8,9 @@ import { LandingComponent } from './landing/landing.component';
 import { MoviePromoComponent } from './movie-promo/movie-promo.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { MovieService} from './movies.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 const appRoutes: Routes =
 [
@@ -27,10 +30,13 @@ const appRoutes: Routes =
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes),
     Ng2CarouselamosModule
   ],
-  providers: [],
+  providers: [
+    MovieService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
