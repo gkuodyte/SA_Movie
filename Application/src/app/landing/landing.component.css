@@ -77,7 +77,7 @@ h1 {
 
 header h2 {
     /*formatting of the sub-heading h2, in the top header*/
-    color: #222629;
+    color: white;
     justify-content: center;
     text-align: center;
     clear: both;
@@ -86,6 +86,7 @@ header h2 {
     margin-bottom: 10px;
     margin-top: 1px;
     font-weight: 100;
+    
 }
 
 h2 {
@@ -93,7 +94,9 @@ h2 {
     font-weight: 100;
     text-align: center;
     text-transform: uppercase;
-   COLOR: #222629;
+   COLOR: white;
+   font-family: "impact";
+   letter-spacing: 2px;
 }
 h3 {
     font-weight: 100;
@@ -127,32 +130,35 @@ footer a:hover img {
 .firstsec {
     /*first section with #e6f2f3 background colour*/
     
-    background-color: #6B6E70;
+    background-color:#0d151c;
     text-align: left;
     padding: 20px 40px 20px 40px;
     margin: 0;
+    /*opacity: 0.9;*/
 }
 
 .secondsec {
     /*second section with white background colour*/
     
-    background-color: #61892F;
+    background-color: #0d151c;
     padding: 20px 40px 20px 40px;
     text-align: left;
+    /*opacity: 0.9;*/
 }
 
 .thirdsec {
     /*third section with #f7f7f7 background colour*/
-    background-color:  rgb(58, 90, 18);
+    background-color:  #0d151c;
     text-align: left;
     padding: 20px 40px 20px 40px;
+    /*opacity: 0.9;*/
 }
 
 .fourthsec {
     /*third section with #f7f7f7 background colour*/
     background-color:  #c7c5c5;
-    text-align: left;
-    padding: 20px 40px 20px 40px;
+    text-align: center;
+    padding: 40px;
 }
 
 /*---------------------------------------------------------------------------------------------- Image Gallery Start */
@@ -172,7 +178,7 @@ figure img {
     width: 100%;
     height: auto;
     max-width: 300px;
-    border: solid 2px #666666;
+    border: solid 4px white;
 }
 
 * {

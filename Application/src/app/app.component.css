@@ -48,14 +48,31 @@
   font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
+  font-family: "impact";
 }
+
+footer {
+  clear: both;
+  margin: 0;
+  background-color: #f7f7f7;
+  padding: 20px 40px 10px 40px;
+  text-align: center;
+}
+
+footer a:hover img {
+  opacity: 0.7;
+  transition: all 0.9s ease;
+  transform: scale(1.2);
+}
+
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
   font-size: 40px;
   font-weight: bold;
   
-  font-family: "Bangla MN", Avenir, antialiased, sans-serif;
+  
+  font-family: "Impact", Avenir, antialiased, sans-serif;
   color: #86C232;
 
 }
