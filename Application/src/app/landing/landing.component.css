@@ -143,6 +143,13 @@ footer a:hover img {
 
 .thirdsec {
     /*third section with #f7f7f7 background colour*/
+    background-color:  rgb(58, 90, 18);
+    text-align: left;
+    padding: 20px 40px 20px 40px;
+}
+
+.fourthsec {
+    /*third section with #f7f7f7 background colour*/
     background-color:  #c7c5c5;
     text-align: left;
     padding: 20px 40px 20px 40px;
