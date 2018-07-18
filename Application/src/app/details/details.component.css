@@ -1,10 +1,25 @@
-.pageContainer, .infoContainer, .dataContainer, .imageContainer{
+.pageContainer{
+    padding-top: 75px;
+    
+}
+
+.pageContainer, .infoContainer, .dataContainer, .imageContainer, .descContainer{
     display: flex;
     width: 100%;
     height: 100%;
+    flex-wrap: wrap;
 }
 
-.pageContainer, .dataContainer, .imageContainer{
+.dataContainer{
+    padding: 50px;
+}
+
+.descContainer{
+    width: 500px;
+    flex-direction: column;
+}
+
+.pageContainer, .dataContainer{
     flex-direction: column;
 }
 
@@ -13,15 +28,35 @@ section, iframe{
     height: 480px;
 }
 
-section{
+.titleContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.imageContainer{
-    flex-direction: row;
+
+.imgMoviePoster, .descContainer{
+    width: 500px;
 }
 
 iframe{
     width: 60%;
+}
+
+.imageContainer, .dataContainer{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+p{
+    text-align: justify;
+}
+
+.imgMoviePoster{
+    height: 700px;
+}
+
+.genContainer, .runContainer{
+    display: flex;
+    flex-direction: row;
+    word-spacing: 5px;
 }
