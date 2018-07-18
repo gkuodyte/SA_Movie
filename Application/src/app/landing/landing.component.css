@@ -1,9 +1,9 @@
 div.gallery {
-    border: 1px solid #ccc;
+    border: 1px solid #222629;
 }
 
 div.gallery:hover {
-    border: 1px solid #777;
+    border: 1px solid #222629;
 }
 
 div.gallery img {
@@ -50,7 +50,7 @@ div.desc {
 body {
     /*This formats the font size, colour and alignment for the content as well as the margin of the body*/
     font-family: "Bangla MN", Avenir, antialiased, sans-serif;
-    color: #666666;
+    color: #86C232;
     font-size: 100%;
     text-align: center;
 
@@ -58,11 +58,11 @@ body {
 
 
 header {
-    background-color: darkgray;
+    background-color: rgb(170, 15, 15);
 }
 h1 {
     /*header1 formatting*/
-    color: black;
+    color: #86C232;
     justify-content: center;
     text-align: center;
     clear: both;
@@ -77,7 +77,7 @@ h1 {
 
 header h2 {
     /*formatting of the sub-heading h2, in the top header*/
-    color: #666666;
+    color: #222629;
     justify-content: center;
     text-align: center;
     clear: both;
@@ -93,6 +93,7 @@ h2 {
     font-weight: 100;
     text-align: center;
     text-transform: uppercase;
+   COLOR: #222629;
 }
 h3 {
     font-weight: 100;
@@ -100,13 +101,7 @@ h3 {
     text-transform: uppercase;
 }
 
-h4{
-    font-weight: 100;
-    text-align: left;
-    text-transform: uppercase;
-    font-style: italic;
-    text-decoration: underline;
-}
+
 
 footer {
     /*This is where the footer is formatted to when the nav is in place on the left (full screen mode)*/
@@ -131,7 +126,8 @@ footer a:hover img {
 
 .firstsec {
     /*first section with #e6f2f3 background colour*/
-    background-color: #e6f2f3;
+    
+    background-color: #6B6E70;
     text-align: left;
     padding: 20px 40px 20px 40px;
     margin: 0;
@@ -139,14 +135,22 @@ footer a:hover img {
 
 .secondsec {
     /*second section with white background colour*/
-    background-color: white;
+    
+    background-color: #61892F;
     padding: 20px 40px 20px 40px;
     text-align: left;
 }
 
 .thirdsec {
     /*third section with #f7f7f7 background colour*/
-    background-color: #f7f7f7;
+    background-color:  rgb(58, 90, 18);
+    text-align: left;
+    padding: 20px 40px 20px 40px;
+}
+
+.fourthsec {
+    /*third section with #f7f7f7 background colour*/
+    background-color:  #c7c5c5;
     text-align: left;
     padding: 20px 40px 20px 40px;
 }
@@ -203,122 +207,6 @@ figcaption {
     text-align: center;
     padding: 0;
     margin: 0;
-}
-
-/*--------------------------------------------------------------------------------------------------- Table Start */
-
-#skiruns {
-    /*This refers to the sizing of the ski runs table*/
-    width: 100%;
-    border-collapse: collapse;
-    padding: 20px 40px 20px 40px;
-
-}
-
-#skiruns td, #skiruns th {
-    /*This refers to the format of the table*/
-    border: solid 2px #666666;
-    padding: 3px;
-}
-
-#skiruns th {
-    /*Here is where the table headings are formated so they standout from the content in the rows below*/
-    padding-top: 6px;
-    padding-bottom: 6px;
-    text-align: center;
-    background-color: #f7f7f7;
-}
-
-/*--------------------------------------------------------------------------------------------------- Form  */
-label {
-    display: block;
-    margin-bottom: 1em;
-    text-align: left;
-    padding: 20px 80% 20px 40px;
-    position: relative;
-}
-
-label > input, label > textarea {
-    position: absolute;
-    left: 22%;
-
-    width: 50%;
-
-}
-
-label textarea {
-    height: 72px;
-}
-
-form {
-    width: 100%;
-}
-
-.submit {
-    padding-left: 20px;
-}
-
-@media only screen and (max-width: 730px) {
-    label {
-        display: block;
-        margin-bottom: 1em;
-        text-align: left;
-        padding: 20px 0 20px 0;
-        position: relative;
-    }
-
-    input {
-        margin-top: 20px;
-        left: 22%;
-        top: 0.2em;
-        width: auto;
-    }
-
-    form {
-        width: 100%;
-        margin-left: 20px;
-
-    }
-
-    label > input, label > textarea {
-        position: absolute;
-        left: 90px;
-        top: 0.2em;
-        width: 50%;
-
-    }
-}
-
-/*------------------------------------------------------------------------------------------ Definition List*/
-dl {
-    margin-top: 0;
-}
-
-dt {
-    /*Formats the definition term to ensure that they are clear*/
-    text-transform: uppercase;
-    padding-top: 10px;
-    padding-bottom: 4px;
-    font-size: 18px;
-    font-weight: 100;
-}
-
-dl dd {
-    /*Formats the definitions of the terms*/
-    font-style: italic;
-    padding-bottom: 10px;
-
-}
-
-.topdef {
-    /*Removes spacing and border from the top definition term so that the space between it and the section header isn't too big*/
-    border: none;
-    padding: 0;
-}
-
-.lastdef {
-    /*removes padding from last definition so that the padding between sections is equal*/
-    padding-bottom: 0;
 }
 
 /*--------------------------------------------------------------------------------------------------- ...  */
@@ -398,50 +286,4 @@ nav li a:hover {
         /*Allows navigation li to be positioned vertically not floated up side by side*/
         float: none;
     }
-}
-
-/*--------------------------------------------------------------------------------------- Image Nav */
-
-section.interactiveImgNav ul {
-    /*Manipulates the colour and padding for the interactive nav unordered list*/
-    margin: 0;
-    background-color: #f7f7f7;
-    padding: 40px 40px 15px 40px;
-}
-
-section.interactiveImgNav ul li {
-    /*This refers to the manipulation of the ul li links, that are then displayed inline to allow the elements to align horizontally not vertically*/
-    display: inline-block;
-    margin-right: 40px;
-    padding-bottom: 15px;
-
-}
-
-section.interactiveImgNav ul li.last {
-    /*This removes the margin to the right which is not needed on the last link*/
-    vertical-align: bottom;
-    margin-right: 0;
-    padding-bottom: 15px;
-
-}
-
-
-section.interactiveImgNav ul li a img {
-    /*Sets the parameters and formatting for the img in the interactive navigation*/
-    border: solid 3px #666666;
-    width: 325px;
-    height: auto;
-}
-
-section.interactiveImgNav ul li a:hover img {
-    /*Provide opacity of the image on hover*/
-    opacity: 0.7;
-}
-
-.imgNavH3 {
-    /*This class sets the format for the title of each interactive nav*/
-    color: #666666;
-    font-size: 18px;
-    font-weight: 100;
-    margin: 0;
 }
