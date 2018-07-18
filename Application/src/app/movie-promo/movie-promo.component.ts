@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MovieList } from '../details/movie-list.service';
 
-
 @Component({
   selector: 'app-movie-promo',
   templateUrl: './movie-promo.component.html',
