@@ -9,7 +9,7 @@ import { MoviePromoComponent } from './movie-promo/movie-promo.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MovieService} from './movies.service';
 import { HttpClientModule } from '@angular/common/http';
-
+import {MovieList} from '../app/details/movie-list.service'
 
 const appRoutes: Routes =
 [
@@ -34,6 +34,7 @@ const appRoutes: Routes =
   ],
   providers: [
     MovieService,
+    MovieList
   ],
   bootstrap: [AppComponent]
 })
