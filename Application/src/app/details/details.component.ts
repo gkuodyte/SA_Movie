@@ -13,19 +13,21 @@ export class DetailsComponent implements OnInit {
 
   data = this.movieList.getData();
 
+  private movieCollection;
   private selectedMovie;
 
-  constructor(private router: Router, private movieList: MovieList, private movieService :MovieService) {
+  constructor(private router: Router, private movieList: MovieList, private movieService :MovieService) { 
+    this.movieService.getData().subscribe(res => {
+    this.movieCollection = movieService.generateArray(res); 
 
-    for(let i = 1; i < movieService.movieArray.length; i++){
-      if((movieService.movieArray[i].Title) == this.data){
-        console.log("Found");
-        console.log(movieService.movieArray[i]);
-        this.selectedMovie = movieService.movieArray[i];
+      for(let i = 1; i < this.movieCollection.length; i++){
+        if((this.movieCollection[i].Title) == this.data){
+          this.selectedMovie = this.movieCollection[i];
+        }
       }
-    }
+    });
   }
-
+  
   ngOnInit() {
   }
 }
