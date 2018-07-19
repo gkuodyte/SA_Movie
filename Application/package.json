@@ -24,6 +24,7 @@
     "@angular/router": "^6.0.3",
     "angular-common": "^0.1.0",
     "core-js": "^2.5.4",
+    "ng-material-datepicker": "^2.0.5",
     "ng-simple-slideshow": "^1.2.3",
     "ng2-carouselamos": "^3.2.0",
     "rxjs": "^6.0.0",
