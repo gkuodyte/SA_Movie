@@ -94,7 +94,7 @@ h2 {
     font-weight: 100;
     text-align: center;
     text-transform: uppercase;
-   COLOR: white;
+    color: #86C232;
    font-family: "impact";
    letter-spacing: 2px;
 }
@@ -130,35 +130,51 @@ footer a:hover img {
 .firstsec {
     /*first section with #e6f2f3 background colour*/
     
-    background-color:#0d151c;
+    background-color:black;
     text-align: left;
     padding: 20px 40px 20px 40px;
     margin: 0;
     /*opacity: 0.9;*/
+    font-family: "impact";
+    color: white;
+
 }
 
 .secondsec {
     /*second section with white background colour*/
     
-    background-color: #0d151c;
+    background-color: rgb(64,60,62);
     padding: 20px 40px 20px 40px;
     text-align: left;
     /*opacity: 0.9;*/
+    font-family: "impact";
+    color: white;
+
+
 }
 
 .thirdsec {
     /*third section with #f7f7f7 background colour*/
-    background-color:  #0d151c;
+    background-color:  black;
     text-align: left;
     padding: 20px 40px 20px 40px;
     /*opacity: 0.9;*/
+    font-family: "impact";
+    color: white;
+
+
 }
 
 .fourthsec {
     /*third section with #f7f7f7 background colour*/
-    background-color:  #c7c5c5;
+    background-color: rgb(64,60,62);
     text-align: center;
     padding: 40px;
+    color: white;
+    font-family: "impact";
+    letter-spacing: 2px;
+
+    
 }
 
 /*---------------------------------------------------------------------------------------------- Image Gallery Start */
