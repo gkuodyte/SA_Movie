@@ -1,15 +1,27 @@
 <div class="pageContainer">
-  <section class="titleContainer">
+  
+  <div class="titleContainer">
     <h1>{{selectedMovie.Title}}</h1>
-    <iframe src="https://www.youtube.com/embed/D86RtevtfrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </section>
-
+    <!---<iframe data-bind="attr: {src: selectedMovie.Trailer}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+  </div>
+ 
+  <div class="container-fluid">
+    
+   
+      <div class="container-fluid"> 
+          <div class ="row">
   <section class="infoContainer">
+     <div class="col-sm-6">
+      <div class="imageContainer">
+          <img class="imgMoviePoster" src={{selectedMovie.Image}} alt="movieTitle">
+       </div>
+       </div>
     <div class="dataContainer">
-
+        <div class = "col-sm-5">
       <div class="genContainer">
           <h4 class="ttl">Release date: &nbsp;</h4>
           <h4 class="ttl">Running time:</h4>
+      </div>
       </div>
 
       <div class="runContainer">
@@ -23,11 +35,15 @@
     </div>
     <calendar></calendar>    
     </div>
+    <hr>
+    
     
     <div class="imageContainer">
        <img class="imgMoviePoster" src="{{selectedMovie.Image}}" alt="{{selectedMovie.Title}}}">
     </div>
   </section>
   
-</div>
+   
+  <iframe src="https://www.youtube.com/embed/D86RtevtfrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+</div>
