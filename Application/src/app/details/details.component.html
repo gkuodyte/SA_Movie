@@ -1,6 +1,7 @@
 <div class="pageContainer">
   <section class="titleContainer">
     <h1>{{selectedMovie.Title}}</h1>
+    <iframe src="https://www.youtube.com/embed/D86RtevtfrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </section>
 
   <section class="infoContainer">
@@ -12,18 +13,21 @@
       </div>
 
       <div class="runContainer">
-          <h5 class="releaseInfo"> &nbsp;{{selectedMovie["Release date"]}}</h5>
-          <h5 class="runningInfo">&nbsp; &nbsp; {{selectedMovie["Running time"]}}</h5>
+          <h5 class="releaseInfo">16 May 2018 &nbsp;</h5>
+          <h5 class="runningInfo">&nbsp; &nbsp; 120 minutes</h5>
       </div>
 
       <div class="descContainer">
       <h2>More information about the film</h2>
-      <p>{{selectedMovie.Description}}</p>
+      <p> After surviving a near fatal bovine attack, a disfigured cafeteria chef (Wade Wilson) struggles to fulfil his dream of becoming Mayberry's hottest bartender while also learning to cope with his lost sense of taste. Searching to regain his spice for life, as well as a flux capacitor, Wade must battle ninjas, the yakuza, and a pack of sexually aggressive canines, as he journeys around the world to discover the impotence of family, friendship, and flavour - finding a new taste for adventure and earning the coveted coffee mug title of World's Best Lover. </p>
     </div>
+    <calendar></calendar>    
     </div>
     
     <div class="imageContainer">
-       <img class="imgMoviePoster" src={{selectedMovie.Image}} alt="movieTitle">
+       <img class="imgMoviePoster" src="https://www.moviehouse.co.uk/Media/d54e3d8a-b3d1-4557-beb4-ab6aeb8f9ac4.jpg" alt="movieTitle">
     </div>
   </section>
+  
 </div>
+
