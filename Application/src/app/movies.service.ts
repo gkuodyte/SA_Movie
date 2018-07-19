@@ -8,12 +8,11 @@ import { HttpClient } from "@angular/common/http";
       this.getData();
     }
 
-    private movieArray;
+    public movieArray;
 
     getData(){
       this.http.get('https://groupproject-92fdb.firebaseio.com/Movies.json').subscribe(res => {
-        this.movieArray = this.generateArray(res)
-        console.log(this.movieArray);})
+        this.movieArray = this.generateArray(res) })
     }
 
     generateArray(res) {
