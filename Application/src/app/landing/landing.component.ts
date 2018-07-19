@@ -34,6 +34,7 @@ export class LandingComponent implements OnInit {
   }
 
   onClick(name: String){
+    this.movieList.setData(name);
     this.router.navigateByUrl('/details/' + name);
   }
 
