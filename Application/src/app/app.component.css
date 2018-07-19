@@ -78,7 +78,7 @@ footer a:hover img {
 }
 
 /* Change the background color on mouse-over */
-.header a:hover {
+.header-right a:hover {
   background-color: #ddd;
   
 }
@@ -109,7 +109,7 @@ footer a:hover img {
 .logoImg {
   width: 150px;
   height: 70px;
-  border: 2px solid white;
+  border: 2px solid #86C232;
   margin-bottom: -7px;
   padding: 0px;
   position: absolute;

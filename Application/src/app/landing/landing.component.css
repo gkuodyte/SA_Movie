@@ -260,6 +260,7 @@ nav {
 /*positions to stay at the top of the window when the user scrolls down the page*/
     position: sticky;
     top: 0;
+
 }
 
 nav ul {
