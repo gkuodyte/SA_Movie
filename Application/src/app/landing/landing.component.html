@@ -19,82 +19,26 @@
 </section>
 <section class="secondsec">
     <h2>Top Rated</h2>
-    <div class="responsive">
+    <div class="responsive" *ngFor = "let top of topMovies">
+      {{top.Title}}
         <div class="gallery">
-          <a target="_blank" href="img_5terre.jpg">
-            <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+          <a target="_blank" (click)= "onClick(top.Title)">
+            <img src="{{top.Image}}" alt="Cinque Terre" width="600" height="400">
           </a>
-          <div class="desc">Add a description of the image here</div>
         </div>
       </div>
-      
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="img_forest.jpg">
-            <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-          </a>
-          <div class="desc">Add a description of the image here</div>
-        </div>
-      </div>
-      
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="img_lights.jpg">
-            <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-          </a>
-          <div class="desc">Add a description of the image here</div>
-        </div>
-      </div>
-      
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="img_mountains.jpg">
-            <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-          </a>
-          <div class="desc">Add a description of the image here</div>
-        </div>
-      </div>
-      
       <div class="clearfix"></div>
 </section>
 <section class="thirdsec">
   <h2>Coming Soon</h2>
   <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-          <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+      <div class="gallery" *ngFor = "let soon of soonMovies">
+        {{soon.Title}}
+        <a target="_blank" (click)= "onClick(soon.Title)">
+          <img src="{{soon.Image}}" alt="Cinque Terre" width="600" height="400">
         </a>
-        <div class="desc">Add a description of the image here</div>
       </div>
     </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img_forest.jpg">
-          <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img_lights.jpg">
-          <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img_mountains.jpg">
-          <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-    
     <div class="clearfix"></div>
 </section>
 

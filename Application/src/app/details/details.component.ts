@@ -13,6 +13,7 @@ export class DetailsComponent implements OnInit {
 
   data = this.movieList.getData();
 
+  
   private movieCollection;
   private selectedMovie;
 
