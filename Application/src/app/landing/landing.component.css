@@ -6,19 +6,14 @@ div.gallery:hover {
     border: 1px solid #222629;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-img{
-    width: 100%;
-    height: auto;
-}
-
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+.fImage{
+    width:250px;
+    height: 100px;
 }
 
 * {
