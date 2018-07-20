@@ -9,15 +9,11 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="assets/images/Hellboy.png" (click) = "onClick('Incredibles')">
+        <img src="https://static1.squarespace.com/static/507b2f30e4b066e116488db6/t/51be3e0fe4b0356bbe26996c/1371422226636/man-of-steel-poster-wide.jpg" (click) = "onClick('Adrift')">
       </div>
   
-      <div class="item">
-        <img src="assets/images/Avengers.png" (click) = "onClick('Jurassic World: Fallen Kingdom')">
-      </div>
-  
-      <div class="item">
-        <img src="assets/images/Thor.jpeg" (click) = "onClick('thor')">
+      <div class="item" *ngFor = "let image of promoMovies">
+        <img src="{{image.PromoImage}}" (click) = "onClick(image.Title)">
       </div>
     </div>
   

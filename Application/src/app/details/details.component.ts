@@ -13,6 +13,7 @@ export class DetailsComponent implements OnInit {
 
   data = this.movieList.getData();
 
+  
   private movieCollection;
   private selectedMovie;
 
@@ -20,6 +21,7 @@ export class DetailsComponent implements OnInit {
     this.movieService.getData().subscribe(res => {
     this.movieCollection = movieService.generateArray(res); 
 
+    console.log(this.data);
       for(let i = 1; i < this.movieCollection.length; i++){
         if((this.movieCollection[i].Title) == this.data){
           this.selectedMovie = this.movieCollection[i];
