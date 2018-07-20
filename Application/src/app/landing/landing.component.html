@@ -12,12 +12,13 @@
   <h2>New Releases</h2>
   <div class="responsive">
     <div class = "gallery" *ngFor = "let movie of newMovies">
-    {{movie.Title}}
+    <!-- {{movie.Title}} -->
         <a target="_blank"  name = "firstsec" (click)= "onClick(movie.Title)">
+
           <img src="{{movie.Image}}" alt="Cinque Terre" width="600" height="400" class = "fImage">
         </a>
-      </div>
-    </div>
+          </div>
+</div>
     <div class="clearfix"></div>
  
 </section>
@@ -26,7 +27,7 @@
     <h2>Top Rated</h2>
     <div class="responsive">
       <div class = "gallery" *ngFor = "let top of topMovies">
-      {{top.Title}}
+      <!-- {{top.Title}} -->
           <a target="_blank" (click)= "onClick(top.Title)">
             <img src="{{top.Image}}" alt="Cinque Terre" width="600" height="400" class = "fImage">
           </a>
@@ -38,7 +39,7 @@
   <h2>Coming Soon</h2>
   <div class="responsive">
       <div class="gallery" *ngFor = "let soon of soonMovies">
-        {{soon.Title}}
+        <!-- {{soon.Title}} -->
         <a target="_blank" (click)= "onClick(soon.Title)">
           <img src="{{soon.Image}}" alt="Cinque Terre" width="600" height="400" class="fImage">
         </a>
