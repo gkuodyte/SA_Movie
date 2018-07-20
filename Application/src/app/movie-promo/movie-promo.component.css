@@ -16,10 +16,15 @@
     width:100%
     }*/
 
-    .carousel-inner > .item > img{
-        margin:auto;
-        width:100%;
-        height:450px;
-        }
-        
+.carousel-inner > .item > img{
+    margin:auto;
+    width:100%;
+    height:450px;
+}
+   
+.carousel-inner > .item > .test{
+    margin:auto;
+    width:100%;
+    height:750px;
+}
         
