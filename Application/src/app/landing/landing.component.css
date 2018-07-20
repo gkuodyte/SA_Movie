@@ -6,7 +6,12 @@ div.gallery:hover {
     border: 1px solid #222629;
 }
 
-div.gallery img {
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+img{
     width: 100%;
     height: auto;
 }
